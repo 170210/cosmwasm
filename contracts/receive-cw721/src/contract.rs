@@ -21,7 +21,7 @@ pub fn execute(
     msg: ExecuteMsg,
 ) -> StdResult<Response> {
     match msg {
-        ExecuteMsg::Receive(_receive_msg) => handle_receive(),
+        ExecuteMsg::ReceiveNft(_receive_msg) => handle_receive(),
     }
 }
 
